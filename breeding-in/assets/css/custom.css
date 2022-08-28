@@ -1,0 +1,79 @@
+.img-logo {
+    width: 100%;
+    max-width: 150px;
+}
+
+.img-hero {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.img-footer {
+    width: 100%;
+    max-width: 200px;
+}
+
+.card-prod .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #343f52;
+}
+
+
+/* .card-prod .price {
+    font-size: 1.4rem;
+} */
+
+.card-prod .title:hover,
+.card-prod .title:focus {
+    color: #81B547;
+}
+
+.card-prod .category {
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #aab0bc;
+}
+
+.card-prod .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.iframe-about {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    border: 1px solid #c8c8c8;
+}
+
+.card-peternak {
+    flex-direction: row !important;
+}
+
+@media screen and (max-width: 768px) {
+    .card-prod .card-img-top {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-prod .card-img-top {
+        height: 100px;
+    }
+    .card-prod .price,
+    .card-prod .title {
+        font-size: .75rem;
+    }
+    .card-prod .category {
+        font-size: .5rem;
+        line-height: 1.3;
+    }
+}
