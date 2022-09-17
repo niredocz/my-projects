@@ -1,3 +1,22 @@
+.limit-1-line-text {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.limit-2-line-text {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.limit-3-line-text {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .img-logo {
     width: 100%;
     max-width: 150px;
@@ -8,6 +27,11 @@
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
+}
+
+.basic-slider img {
+    height: 500px;
+    object-fit: cover;
 }
 
 .img-footer {
@@ -35,16 +59,20 @@
 }
 
 .card-prod .category {
-    text-transform: uppercase;
-    letter-spacing: 0.02rem;
-    font-size: 0.7rem;
-    font-weight: 700;
     color: #aab0bc;
+    margin-bottom: 0;
+    font-size: 0.65rem;
+    letter-spacing: 0.02rem;
+    margin-bottom: 5px;
 }
 
 .card-prod .card-img-top {
     height: 200px;
     object-fit: cover;
+}
+
+.sidebar .image-list figure img {
+    height: 100% !important;
 }
 
 .iframe-about {
@@ -55,7 +83,65 @@
 }
 
 .card-peternak {
+    overflow: hidden;
     flex-direction: row !important;
+}
+
+.card-peternak figure {
+    max-width: 300px;
+    height: 250px;
+    width: 100%;
+}
+
+.card-peternak figure a {
+    width: 100%;
+    height: 100%;
+}
+
+.card-peternak figure a img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.vendor-wrap .card-vendor {
+    color: #fff;
+    min-height: 200px;
+    /* height: 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.vendor-wrap .card-vendor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.vendor-wrap .card-vendor .content {
+    position: relative;
+    /* display: flex; */
+    padding: 20px;
+}
+
+.vendor-wrap .card-vendor .content img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+
+.vendor-wrap .img-vendor {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @media screen and (max-width: 768px) {
