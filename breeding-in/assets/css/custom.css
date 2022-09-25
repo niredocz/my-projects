@@ -128,7 +128,7 @@
 
 .vendor-wrap .card-vendor .content {
     position: relative;
-    /* display: flex; */
+    display: flex;
     padding: 20px;
 }
 
@@ -147,6 +147,10 @@
 @media screen and (max-width: 768px) {
     .card-prod .card-img-top {
         height: 150px;
+    }
+
+    .vendor-wrap .card-vendor .content {
+        flex-direction: column;
     }
 }
 
